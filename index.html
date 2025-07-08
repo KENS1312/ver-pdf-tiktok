@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ver PDF solo si me sigues en TikTok</title>
+</head>
+<body style="text-align: center; font-family: sans-serif; padding-top: 50px;">
+  <h1>¿Quieres ver el PDF? 😎</h1>
+  <p>Primero sígueme en TikTok</p>
+  
+  <a href="https://www.tiktok.com/@essens_madrid?lang=es" target="_blank">
+    <button style="padding: 10px 20px; font-size: 16px;">Seguir en TikTok</button>
+  </a>
+
+  <br><br>
+
+  <button onclick="mostrarPDF()" style="padding: 10px 20px; font-size: 16px;">
+    Ya te sigo, mostrar PDF
+  </button>
+
+  <div id="pdf" style="margin-top: 30px; display: none;">
+    <iframe src="mi-archivo.pdf" width="80%" height="600px"></iframe>
+  </div>
+
+  <script>
+    function mostrarPDF() {
+      document.getElementById("pdf").style.display = "block";
+    }
+  </script>
+</body>
+</html>
